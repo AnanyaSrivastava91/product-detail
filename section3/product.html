@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Helvetica;
+        }
+
+        .Main-page {
+            position: relative;
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 10%;
+            overflow: hidden;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .Main-page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(porche.jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .Main-page-title {
+            font-size: 70px;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+        }
+
+        .Main-subtitle {
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 50px;
+            max-width: 80%;
+        }
+
+        video {
+            max-width: 80%;
+            height: auto;
+            border: 4px solid #002402;
+            border-radius: 10px;
+            /* Optional: Border around the video */
+            box-shadow: 2px 3px 5px 0 black;
+            /* Optional: Shadow effect */
+        }
+
+        .second-page {
+            position: relative;
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 10%;
+            overflow: hidden;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .second-page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(porche2.jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .second-page-title {
+            font-size: 50px;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+
+        }
+        .card{
+            border: 2px solid rgb(0,6,46);
+            border-radius: 10px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: 60px;
+
+        }
+        .image{
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section class="Main-page">
+        <card class="Main-title">
+            <H1 class="Main-page-title">Introducing you to the ruler of hearts</H1>
+            <h6 class="Main-subtitle"><u>Porche 911 GT3 RS...</u></h6>
+        </card>
+        <div class="video-container">
+            <video controls>
+                <source src="Porsche GT3RS Green Edit [4K].mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section class="second-page">
+        <h2 class="second-page-title">Porche 911 GT3RS is pinacle of engineering and passion. </h2>
+        <br>
+        <h2 class="second-page-title">Lets look at some of the features of 911</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3> Performance</h3>
+                <img class="image"src="performance.jpg" alt="image">
+            </div>
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
