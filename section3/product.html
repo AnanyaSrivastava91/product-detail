@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+
         * {
             font-family: Helvetica;
         }
 
         body {
-            color: black;
+            margin: 0;
         }
 
         .Main-page {
@@ -52,7 +54,9 @@
             font-size: 40px;
             font-weight: 700;
             text-align: center;
+
         }
+
 
         .video-container {
             display: flex;
@@ -149,6 +153,7 @@
             flex-direction: column;
             /* border: 2px solid black; */
             padding: 10px;
+            box-shadow: 2px 3px 10px 0 rgb(24, 24, 24);
             transition-duration: 0.4s;
 
         }
@@ -164,6 +169,7 @@
             flex-direction: column;
             /* border: 2px solid black; */
             padding: 10px;
+            box-shadow: 2px 3px 10px 0 rgb(24, 24, 24);
             transition-duration: 0.4s;
         }
 
@@ -192,8 +198,6 @@
             text-align: justify;
             /* justify-content: center; */
             /* align-items: center; */
-
-
         }
 
         .txt2 {
@@ -208,6 +212,128 @@
             justify-content: center;
             align-items: center;
 
+        }
+
+
+        .third-page {
+            position: relative;
+            height: 110vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 10%;
+            overflow: hidden;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .third-page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(porche3.jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .great-div2 {
+            width: 100%;
+            display: flex;
+        }
+
+        .heading {
+            width: 100%;
+            height: 50px;
+        }
+
+        .heading2 {
+            width: 100%;
+            height: 50px;
+        }
+
+
+
+        .fourth-page {
+            position: relative;
+            height: 110vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 10%;
+            overflow: hidden;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .fourth-page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(fourth\ page.jpg);
+            background-position: center;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .card-container {
+            display: flex;
+            /*justify-content:flex-start;
+            flex-direction: row-reverse;*/
+            justify-content: space-between;
+            height: 80vh;
+            /* align-items:flex-end;*/
+            gap: 15px;
+        }
+
+        .card {
+
+            border-radius: 10px;
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 2px 3px 10px 0 rgb(24, 24, 24);
+            transition-duration: 0.2s;
+            backdrop-filter: blur(10px);
+
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+
+        }
+
+        .fourth-page {
+            padding: 100px 200px;
+        }
+
+        .heading2 {
+            font-size: 3rem;
+            text-align: center;
+
+        }
+
+        .photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            width: 100%;
+            height: inherit;
+        }
+
+        .paragraph {
+            text-align: center;
+            font-size: large;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -274,6 +400,84 @@
 
         </div>
 
+
+
+    </section>
+
+
+    <section class="third-page">
+        <h1 class="heading"></h1>
+
+        <div class="great-div2">
+            <!-- card 3 -->
+            <div class="card1">
+                <div class="img1 ">
+                    <img class="img" src="transmition.jpg" alt="mkl" />
+
+                </div>
+                <div class="txt1">
+                    <h2><u>Transmition Driveterrain</u></h2>
+                    <p>The Porsche 911 GT3 RS features a seven-speed Porsche Doppelkupplung (PDK) dual-clutch
+                        transmission. This transmission offers rapid gear changes and a shorter overall gear ratio
+                        compared to the 911 GT3, enhancing acceleration and performance. It allows the GT3 RS to reach
+                        0-100 km/h in just 3.2 seconds</p>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card2">
+                <div class="img2">
+                    <img class="img" src="wing.jpg" alt="mkl" />
+
+                </div>
+                <div class="txt2">
+                    <h2><u>Extraordinary Downforce</u></h2>
+                    <p>Certainly! The Porsche 911 GT3 RS features an impressive rear spoiler that enhances both
+                        performance and aesthetics. Made from innovative Fiberflex material, it combines flexibility
+                        with stability, making it suitable for professional racing. The black surface allows for easy
+                        painting. Keep in mind that the GT3 RS’s retaining struts and engine compartment lock are not
+                        included in the scope of delivery; they must be obtained separately from Porsche</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="fourth-page">
+        <h1 class="heading2"><u>Achievments of 911 GT3 RS</u></h1>
+        <div class="card-container">
+            <div class="card">
+                <img class="photo" src="performance.jpg" alt="mkl">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt neque quasi
+                    rem voluptatem
+                    repudiandae natus, autem deleniti corrupti dicta ducimus dolorem earum, quia aperiam!</p>
+
+            </div>
+
+            <div class="card">
+                <img class="photo" src="performance.jpg" alt="mkl">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt neque quasi
+                    rem voluptatem
+                    repudiandae natus, autem deleniti corrupti dicta ducimus dolorem earum, quia aperiam!</p>
+
+            </div>
+
+            <div class="card">
+                <img class="photo" src="performance.jpg" alt="mkl">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt neque quasi
+                    rem voluptatem
+                    repudiandae natus, autem deleniti corrupti dicta ducimus dolorem earum, quia aperiam!</p>
+
+            </div>
+
+            <div class="card">
+                <img class="photo" src="performance.jpg" alt="mkl">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt neque quasi
+                    rem voluptatem
+                    repudiandae natus, autem deleniti corrupti dicta ducimus dolorem earum, quia aperiam!</p>
+
+            </div>
+        </div>
 
 
     </section>
