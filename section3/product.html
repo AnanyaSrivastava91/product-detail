@@ -10,9 +10,13 @@
             font-family: Helvetica;
         }
 
+        body {
+            color: black;
+        }
+
         .Main-page {
             position: relative;
-            height: 120vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -21,6 +25,7 @@
             overflow: hidden;
             border: 1px solid black;
             border-radius: 15px;
+            margin-bottom: 10px;
         }
 
         .Main-page::before {
@@ -46,30 +51,56 @@
             color: rgb(0, 0, 0);
             font-size: 40px;
             font-weight: 700;
+            text-align: center;
         }
 
         .video-container {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            margin-left: auto;
-            margin-right: 50px;
-            max-width: 80%;
+            /* margin-left: auto; */
+            /* margin-right: 50px; */
+            /* max-width: 80%; */
+            width: 100%;
+            /* border: 1px solid black; */
+            /* gap: 20px; */
         }
 
         video {
             max-width: 80%;
             height: auto;
-            border: 4px solid #002402;
+            /* border: 4px solid #002402; */
             border-radius: 10px;
             /* Optional: Border around the video */
             box-shadow: 2px 3px 5px 0 black;
             /* Optional: Shadow effect */
         }
 
+        .text1 {
+            width: 50%;
+            /* border: 1px solid black; */
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 5px;
+        }
+
+        .main-para {
+            color: rgb(0, 0, 0);
+
+
+        }
+
+        .video1 {
+            width: 50%;
+            border-left: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .second-page {
             position: relative;
-            height: 120vh;
+            height: 110vh;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -94,22 +125,89 @@
         }
 
         .second-page-title {
-            font-size: 50px;
-            font-weight: 500;
-            color: rgb(255, 255, 255);
+            color: aliceblue;
+            font-size: 2rem;
+
 
         }
-        .card{
-            border: 2px solid rgb(0,6,46);
-            border-radius: 10px;
-            width: 300px;
-            margin-left: auto;
-            margin-right: 60px;
+
+        .second-page-title1 {
+            color: aliceblue;
+            font-size: 1.7rem;
 
         }
-        .image{
+
+        .great-div {
+            width: 100%;
+            display: flex;
+
+        }
+
+        .card1 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid black; */
+            padding: 10px;
+            transition-duration: 0.4s;
+
+        }
+
+        .card1:hover {
+            transform: translateY(-20px);
+        }
+
+
+        .card2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid black; */
+            padding: 10px;
+            transition-duration: 0.4s;
+        }
+
+        .card2:hover {
+            transform: translateY(-20px);
+
+
+        }
+
+        .img {
+            height: 550px;
+            width: 100%;
+            object-fit: cover;
+
+
+        }
+
+        .txt1 {
+            color: aliceblue;
             justify-content: center;
-            
+            align-items: center;
+        }
+
+        .img1 {
+            display: flex;
+            text-align: justify;
+            /* justify-content: center; */
+            /* align-items: center; */
+
+
+        }
+
+        .txt2 {
+            color: aliceblue;
+            /* justify-content: center; */
+            /* align-items: center; */
+            text-align: justify;
+        }
+
+        .img2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
     </style>
 </head>
@@ -121,22 +219,61 @@
             <h6 class="Main-subtitle"><u>Porche 911 GT3 RS...</u></h6>
         </card>
         <div class="video-container">
-            <video controls>
-                <source src="Porsche GT3RS Green Edit [4K].mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="text1">
+                <h3 class="main-para">The Porsche 911 GT3 RS is the epitome of track-ready performance, featuring a
+                    4.0-liter flat-six engine that delivers an impressive 520 horsepower. This high-performance sports
+                    car is designed with advanced aerodynamics, including a large rear wing and extensive use of
+                    lightweight materials like carbon fiber. Its motorsport-inspired suspension and precise handling
+                    make it a formidable presence on both road and track. Inside, the GT3 RS boasts a race-inspired
+                    cockpit with carbon fiber accents, bucket seats, and a roll cage, ensuring both safety and style.
+                    Ideal for driving enthusiasts, it offers an exhilarating and uncompromising driving experience.
+                    Additionally, the GT3 RS features a lightweight titanium exhaust system, enhancing its performance
+                    and delivering a thrilling exhaust note.</h3>
+            </div>
+            <div class="vl"></div>
+            <div class="video1">
+                <video controls>
+                    <source src="Porsche GT3RS Green Edit [4K].mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
     <section class="second-page">
         <h2 class="second-page-title">Porche 911 GT3RS is pinacle of engineering and passion. </h2>
         <br>
-        <h2 class="second-page-title">Lets look at some of the features of 911</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3> Performance</h3>
-                <img class="image"src="performance.jpg" alt="image">
+        <h3 class="second-page-title1">Lets look at some of the features of 911 GT3 RS</h3>
+        <div class="great-div">
+            <!-- card 1 -->
+            <div class="card1">
+                <div class="img1 ">
+                    <img class="img" src="engine.avif" alt="mkl" />
+
+                </div>
+                <div class="txt1">
+                    <h2><u>Engine Specification</u></h2>
+                    <p>Housing an Flat 6 twin turbo charged engine, Porche's are one the only manufacturers to this
+                        Engine. The Engine in the TRACK spec 911 GT3 RS has 525ps and 465 Nm torque, enough to propel it
+                        to 100 kmph from standing in 3.2secs</p>
+                </div>
             </div>
+
+            <!-- card 2 -->
+            <div class="card2">
+                <div class="img2">
+                    <img class="img" src="performance.jpg" alt="mkl" />
+
+                </div>
+                <div class="txt2">
+                    <h2><u>Drag Coefficient</u></h2>
+                    <p>With a Drag Coefficient of 0.29 (lesser than most supercars), 911 slips through air and provides
+                        an excellent acceleration. All of this is not possible alone as 911 also has an active spoiler
+                        at rear to further stabalise while accelerating and cornering</p>
+                </div>
+            </div>
+
         </div>
+
 
 
     </section>
